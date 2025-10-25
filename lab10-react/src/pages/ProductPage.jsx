@@ -14,7 +14,6 @@ const ProductsPage = () => {
   const [selected, setSelected] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  // Simular carga
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
@@ -49,10 +48,10 @@ const ProductsPage = () => {
 
         <label>Ordenar por:</label>
         <select value={order} onChange={e => setOrder(e.target.value)}>
-          <option value="name:asc">Nombre A→Z</option>
-          <option value="name:desc">Nombre Z→A</option>
-          <option value="price:asc">Precio ↑</option>
-          <option value="price:desc">Precio ↓</option>
+          <option value="name:asc">Nombre A Z</option>
+          <option value="name:desc">Nombre Z A</option>
+          <option value="price:asc">Precio asc</option>
+          <option value="price:desc">Precio desc</option>
         </select>
       </div>
 
